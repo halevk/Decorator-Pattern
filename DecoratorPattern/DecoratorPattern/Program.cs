@@ -14,12 +14,15 @@ namespace DecoratorPattern
             var vegPizza = new VegeterianPizza();
 
             // extras
-            var mush = new PizzaWithMushroom("mushroom", 20, vegPizza);
-            var pep = new PizzaWithPeproni("REd Peperoni", 10, mush);
-            var ced = new PizzaWithCheddarChesee("Cheddar chesee extra", 5, pep);
+            var mush = new PizzaWithMushroom("Mushroom", 20, vegPizza);
+            var pep = new PizzaWithPeproni("Red Peperoni", 10, mush);
+            var ced = new PizzaWithCheddarChesee("Cheddar cheese extra", 5, pep);
 
-            Console.WriteLine(ced.Price);
-            Console.WriteLine(ced.Name);
+            
+            Console.WriteLine("Total price of order : {0} TL", ced.Price);
+            Console.WriteLine("Pizza ordered : {0}",ced.Name);
+
+            Console.ReadLine();
 
         }
     }
