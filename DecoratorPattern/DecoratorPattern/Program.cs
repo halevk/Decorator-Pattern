@@ -10,8 +10,10 @@ namespace DecoratorPattern
     {
         static void Main(string[] args)
         {
+            //simple pizza
             var vegPizza = new VegeterianPizza();
 
+            // extras
             var mush = new PizzaWithMushroom("mushroom", 20, vegPizza);
             var pep = new PizzaWithPeproni("REd Peperoni", 10, mush);
             var ced = new PizzaWithCheddarChesee("Cheddar chesee extra", 5, pep);
