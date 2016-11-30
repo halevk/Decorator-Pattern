@@ -41,14 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ExtraBase.cs" />
-    <Compile Include="IExtra.cs" />
-    <Compile Include="PizzaWithCheddarChesee.cs" />
-    <Compile Include="PizzaWithMushroom.cs" />
-    <Compile Include="PizzaWithPeproni.cs" />
+    <Compile Include="Extra.cs" />
+    <Compile Include="ExtraMushroom.cs" />
+    <Compile Include="ExtraOlive.cs" />
+    <Compile Include="Pizza.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="VegeterianPizza.cs" />
+    <Compile Include="VegiPizza.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

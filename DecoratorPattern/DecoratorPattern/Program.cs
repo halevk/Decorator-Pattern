@@ -10,16 +10,14 @@ namespace DecoratorPattern
     {
         static void Main(string[] args)
         {
-            //simple pizza
-            var vegPizza = new VegeterianPizza();
+           
+            Pizza veg = new VegiPizza() {Price = 10};
+            veg=new ExtraMushroom(veg);
+            veg = new ExtraOlive(veg);
 
-            // extras
-            var mush = new PizzaWithMushroom("Mushroom", 20, vegPizza);
-            var pep = new PizzaWithPeproni("Red Peperoni", 10, mush);
-            var ced = new PizzaWithCheddarChesee("Cheddar cheese extra", 5, pep);
-            
-            Console.WriteLine("Total price of order : {0} TL", ced.Price);
-            Console.WriteLine("Pizza ordered : {0}",ced.Name);
+            var price = veg.GetPrice();
+
+            Console.WriteLine("Total Price {0} $",price);
 
             Console.ReadLine();
 
